@@ -25,7 +25,8 @@ int main() {
 		// if the remaining days is less than 2, then simply add it to the maximum
 		mx += remaining;
 	} else {
-		// otherwise, add 2 to the maximum
+		// since we started on SATURDAY and 'n' is greater than or equal to 2, then 
+		// automatically there are 2 days off that will be added
 		mx += 2;
 	}
 	cout << mn << " " << mx << '\n';
